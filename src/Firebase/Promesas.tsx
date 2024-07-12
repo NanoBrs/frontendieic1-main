@@ -45,7 +45,7 @@ export const obtenerPersona =async (key:string) => {
     }
 }
 
-export const handleModificar = async(persona:Persona)=>{
+export const modificarPersona = async(persona:Persona)=>{
     const ref = doc(collection(db,"persona"),persona.key)
     //con key incluida
     //await updateDoc(ref,{...persona})
